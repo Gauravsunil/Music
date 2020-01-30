@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+margin: 0;
+overflow-x: hidden;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(9,121,112,1) 36%, rgba(37,72,105,1) 100%);
+
+} 
+.v-header{
+    height: 100%;
+
+}
+.container{
+max-width: 1200px;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: auto;
+}
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -3;
+}
+.fullscreen-video-wrap video{
+    min-height: 100%;
+    min-width: 100%;
+}
+   .data{
+    
+    z-index: 2;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    padding: 2px;
+    margin: 5px;
+}
+ ul li{
+     display: inline-block;
+     margin: 3px;
+     font-size: 16px;
+}
+.search{
+    width: 500px;
+    float: right;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius:5px; 
+    padding: 5px;
+    transition: 0.6s ease;
+    border: transparent
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+}
+.logo img{
+    float:left;
+    width: 150px;
+    height: 60px;
+}
+.first{
+    max-width: 1200px;
+    margin: auto;
+}
+.name{
+    font-family:'Lobster', cursive;
+    font-size: 30px;
+    height: 30px;
+    margin-top: 70px;
+    text-align: center; 
+    color: aliceblue;
+    text-shadow: 10px;
+}
+.second{
+    border: 2px solid white;
+    height: 300px;
+    margin-top: 30px;
+    border-radius:18px; 
+    padding: 0;
+    background-color: thistle;
+    margin-left:433px; 
+    align-self: center;
+}
+.third img{
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius:18px; 
+}
+.img{
+    width: 188px;
+    height: 100%;
+}
+.img:hover{
+    cursor: pointer;
+}
+.col-xs-2{
+    height:200px; 
+}
+.row{
+    margin-top:50px;
+    margin-bottom: 50px; 
+    width: 100%;
+}
+.four{
+padding-left:50px; 
+padding-top: 10px;
+height: 50px;
+}
+button{
+    width: 60px;
+    height: 40px;
+    background-color: slateblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#seek-bar{
+    width: 250px;
+    height: 5px;
+    background-color: gray;
+    display: flex;
+    border-radius:50px;
+    margin-left: 18px; 
+    margin-top: 13px;
+}
+#fill{
+    height: 5px;
+    background-color:royalblue;
+    border-radius:20px; 
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color: royalblue;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+.img{
+    box-shadow: 0 4px 8px 0 grey,0 6px 20px 0 grey;
+}
+h4{
+    color: honeydew;
+    font-family:  'Lobster', cursive;
+}
+.footer-main-div{
+    width: 100%;
+    height:200px;
+    margin: auto;
+    background: #3D3B82;
+    padding: 20px 0px;
+    box-shadow: 0 4px 8px 0 grey,0 6px 20px 0 grey;
+
+}
+.footer-social-icons{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+.footer-social-icons ul{
+   align-items: center;
+   margin-right: 43%;
+
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 30px;
+}
+.footer-copy{
+    font-family: 'Lobster', cursive;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.footer-copy h4{
+    align-items: center;
+    width: 60px;
+    margin-left: 47.5%;
+}
+.bg-modal{
+    width: 100%;
+    height: 1890px;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    display:none;
+    justify-content: center;
+    
+}
+.bg-modal2{
+    width: 100%;
+    height: 1890px;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    display:none;
+    justify-content: center;
+    
+}
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color:white;
+    opacity: 1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+}
+.modal-content2{
+    width: 500px;
+    height: 400px;
+    background-color:white;
+    opacity: 1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+}
+.loginpic{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 20px;
+}
+#email,#email1,#user {
+
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+#password,#password1,#password2{
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+#new,#new1,#new2{
+    width: 20%;
+}

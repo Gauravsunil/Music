@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>    -->
+<link rel="stylesheet" href="style.css">
+<style>
+.img:hover{
+    transform:scale(1.2);
+    position: absolute;
+    z-index: 10;
+}
+img{
+transition: all 0.5s;
+}</style>
+<title>Xingo</title>
+</head>
+<body>
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="./videos/video2.mp4" muted="true" id="vid" loop="true">
+
+            </video>
+        </div>
+        <div class="data">
+    <div class="first">
+        <div class="logo">
+            <img src="./posters/logo.jpg" alt="">
+        </div>
+        <div class="search">
+            <form id="myform">
+            <input type="text" class="form-group" placeholder="Search" id="input">
+            <input type="submit" class="btn btn-primary" value="Search">
+        </form>
+        </div>
+        <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#" class="login">Login</a></li>
+            <li><a href="#" class="signup">Signup</a></li>
+            
+        </ul>
+    </div>
+    <div class="row">
+    <div class="col-xs-3 col-xs-offset-3 name" id="title"></div>
+    <div class="col-xs-3 col-xs-offset-3 second" >
+      <div class="third">
+          <img src="./posters/poster1.jpg" id="poster" alt="">
+      </div>
+      <div class="four">
+          <button onclick="pre()" id="previousbtn"><span class="glyphicon glyphicon glyphicon-step-backward"></span></button>
+          <button  onclick="playpause()" id="playbtn"><span id="five" class="glyphicon glyphicon glyphicon-pause"></span></button>
+          <button onclick="next()" id="forwardbtn"><span class="glyphicon glyphicon glyphicon-step-forward"></span></button>
+      </div>
+      <div id="seek-bar">
+          <div id="fill">
+          </div>
+          <div id="handle"></div>
+      </div>
+    </div>
+    </div>
+<br>
+<br>
+
+<h4>International Music</h4>
+<hr>
+    <div class="row">
+        <div class="col-xs-2 ">
+            <img src="./posters/poster1.jpg" onclick="select(1)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster2.jpg" onclick="select(2)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster3.jpg" onclick="select(3)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster4.jpg" onclick="select(4)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster5.jpg" onclick="select(5)" class="img">
+        </div>
+        <div class="col-xs-2">
+                <img src="./posters/poster6.jpg" onclick="select(6)" class="img">
+            </div>
+    </div>
+    <h4>Punjabi Music</h4>
+    <hr>
+    
+    <div class="row">
+        <div class="col-xs-2 ">
+            <img src="./posters/poster7.jpg" onclick="select(7)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster8.jpg" onclick="select(8)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster9.jpg" onclick="select(9)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster10.jpg" onclick="select(10)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster11.jpg" onclick="select(11)" class="img">
+        </div>
+        <div class="col-xs-2">
+                <img src="./posters/poster12.jpg" onclick="select(12)" class="img">
+            </div>
+    </div>
+    <h4>Bollywood Music</h4>
+    <hr>
+    
+    <div class="row">
+        <div class="col-xs-2 ">
+            <img src="./posters/poster13.jpg" onclick="select(13)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster14.jpg" onclick="select(14)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster15.jpg" onclick="select(15)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster16.jpg" onclick="select(16)" class="img">
+        </div>
+        <div class="col-xs-2">
+            <img src="./posters/poster17.jpg" onclick="select(17)" class="img">
+        </div>
+        <div class="col-xs-2">
+                <img src="./posters/poster18.jpg" onclick="select(18)" class="img">
+            </div>
+    </div>
+</div>
+
+</header>
+
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close" id="finish">X</div>
+        <img src="./posters/login.jpg" class="loginpic" alt="">
+           <input type="text" id="email" placeholder="Email">
+            <input type="password"  id="password" placeholder="Password">
+            <button class="btn btn-success" id="new" >Login</button>
+            <button class="btn btn-success"  id="new1">Signup</button>
+
+        
+    </div>
+</div>
+<div class="bg-modal2">
+        <div class="modal-content2">
+            <div class="close" id="finish2">X</div>
+            <img src="./posters/login.jpg" class="loginpic" alt="">
+
+                <input type="text" id="user" placeholder="User Name">
+                <input type="text" id="email1" placeholder="Email">
+                <input type="password"  id="password1" placeholder="Password">
+                <input type="password"  id="password2" placeholder="Confirm Password">
+                <button class="btn btn-success" id="new2">Signup</button>
+    
+
+        </div>
+    </div>
+<br>
+<br>
+<div class="footer-main-div">
+    <div class="footer-social-icons">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </div>
+<div class="footer-copy">
+<h4>@Copyrights 2019</h4>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

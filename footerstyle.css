@@ -1,0 +1,58 @@
+.div-footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+img{
+    width: 100%;
+        height: 200px;
+}
+.block1{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+text-align:center;
+}
+.block2{
+    margin-top:60px;
+
+}
+.links{
+    width: 200px;
+    padding: 20px;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+ul li h4{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Patua One', cursive;
+}
+li{
+    font-size: 15px;
+    padding: 3px;
+}
+a:hover{
+    text-decoration: none;
+  
+}
+.icons{
+    margin-top:50px;
+    height: 150px;
+    text-align: center;
+}
+.icons ul{
+    padding-left: 0;
+}
+.icons ul li{
+    display: inline-block;
+    width: 30px;
+}
+.icons h5{
+    color: aliceblue;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Patua One', cursive;
+}
+
+
